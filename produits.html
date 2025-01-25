@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <!-- Police -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+       rel="stylesheet"
+     />
+</head>
+
+<body>
+    <div class="container mx-auto px-4">
+          <!-- navbar============== -->
+          <nav class="flex items-center justify-between p-4">
+            <div class="logo text-xl font-bold uppercase">
+                <span>La Cave élégante</span>
+            </div>
+            <!-- Menu Burger -->
+            <div class="md:hidden">
+                <button id="burger-menu" class="text-black">
+                    <span class="block w-6 h-0.5 bg-black mb-1"></span>
+                    <span class="block w-6 h-0.5 bg-black mb-1"></span>
+                    <span class="block w-6 h-0.5 bg-black"></span>
+                </button>
+            </div>
+            <!-- Menu -->
+            <ul id="menu" class="flex space-x-4 ml-auto hidden md:flex">
+                <li><a href="index.html" class="text-black hover:text-red-800 text-base md:text-lg uppercase">Accueil</a></li>
+                <li><a href="produits.html" class="text-black hover:text-red-800 text-base md:text-lg uppercase">Produits</a></li>
+                <li><a href="apropos.html" class="text-black hover:text-red-800 text-base md:text-lg uppercase">A propos</a></li>
+              
+            </ul>
+        </nav>
+        
+        <!-- Menu Burger en mode mobile (vertical) -->
+        <div id="burger-menu-modal" class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 hidden md:hidden backdrop-blur-lg">
+            <div class="flex flex-col items-end p-6">
+                <button id="close-menu" class="text-white text-2xl">
+                    &times;
+                </button>
+            </div>
+            <ul class="flex flex-col items-center justify-center space-y-4 h-full text-white">
+                <li><a href="index.html" class="hover:text-red-800 text-lg uppercase">Accueil</a></li>
+                <li><a href="produits.html" class="hover:text-red-800 text-lg uppercase">Produits</a></li>
+                <li><a href="apropos.html" class="hover:text-red-800 text-lg uppercase">A propos</a></li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="text-center mt-16">
+            <h2 class="text-4xl font-bold" style="color: #2C2C2C;">Découvrez nos sélections d'exception</h2>
+        </div>
+        
+        <!-- Galerie Flowbite centrée -->
+        <div class="flex justify-center mt-24">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl w-full">
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/boisson.webp" alt="">
+                </div>
+                <div class="gallery-item">
+                   <a href="produit.html"> <img class="h-auto max-w-full rounded-lg" src="images/imagevin20.jpg" alt=""></a>
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin12.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin16.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/olio-0.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin11.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vinphoto7.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/pietrabianca-4.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin11.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin16.jpg" alt=""/>
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin8.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin12.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin8.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin20.jpg" alt=""/>
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin12.jpg" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img class="h-auto max-w-full rounded-lg" src="images/vin11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="media">
+            <ul>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="bi bi-tiktok"></i></i></li>  
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</body>
+
+</html>

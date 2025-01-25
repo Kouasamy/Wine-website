@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="stylepapropos.css">
+    <!-- Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <!-- Police -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+       rel="stylesheet"
+     />
+</head>
+
+<body>
+    <div class="container">
+        <div class="stripes">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+        </div>
+          <!-- navbar============== -->
+          <nav class="flex items-center justify-between p-4">
+            <div class="logo text-xl font-bold uppercase">
+                <span>La Cave élégante</span>
+            </div>
+            <!-- Menu Burger -->
+            <div class="md:hidden">
+                <button id="burger-menu" class="text-black">
+                    <span class="block w-6 h-0.5 bg-black mb-1"></span>
+                    <span class="block w-6 h-0.5 bg-black mb-1"></span>
+                    <span class="block w-6 h-0.5 bg-black"></span>
+                </button>
+            </div>
+            <!-- Menu -->
+            <ul id="menu" class="flex space-x-4 ml-auto hidden md:flex">
+                <li><a href="index.html" class="text-black hover:text-red-800 text-base md:text-lg uppercase">Accueil</a></li>
+                <li><a href="produits.html" class="text-black hover:text-red-800 text-base md:text-lg uppercase">Produits</a></li>
+                <li><a href="apropos.html" class="text-black hover:text-red-800 text-base md:text-lg uppercase">A propos</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Menu Burger en mode mobile (vertical) -->
+        <div id="burger-menu-modal" class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 hidden md:hidden backdrop-blur-lg">
+            <div class="flex flex-col items-end p-6">
+                <button id="close-menu" class="text-white text-2xl">
+                    &times;
+                </button>
+            </div>
+            <ul class="flex flex-col items-center justify-center space-y-4 h-full text-white">
+                <li><a href="index.html" class="hover:text-red-800 text-lg uppercase">Accueil</a></li>
+                <li><a href="produits.html" class="hover:text-red-800 text-lg uppercase">Produits</a></li>
+                <li><a href="apropos.html" class="hover:text-red-800 text-lg uppercase">A propos</a></li>
+            </ul>
+        </div>
+        
+
+       
+
+       
+        
+        <div class="title text-center mt-6 -ml-8">
+            <div class="container mx-auto px-4 py-8">
+                <div class="flex flex-col lg:flex-row items-center lg:items-start">
+                    <!-- Description Section -->
+                    <div class="lg:w-1/2 text-left space-y-6">
+                        <h1 class="text-2xl lg:text-3xl font-bold text-gray-800">
+                            Château Margaux 2015 – L’Excellence Bordelaise
+                        </h1>
+                        <p class="text-gray-700 text-base leading-relaxed">
+                            Découvrez le raffinement du Château Margaux 2015, 
+                            un grand cru classé emblématique de la région bordelaise. 
+                            Avec sa robe rubis intense, ce vin dévoile des arômes complexes 
+                            de fruits rouges mûrs, de vanille et de notes boisées délicates. 
+                            En bouche, son équilibre parfait entre puissance et élégance 
+                            laisse place à une finale longue et envoûtante. Idéal pour accompagner 
+                            des plats raffinés tels qu’un filet de bœuf ou un magret de canard, 
+                            ce millésime est une véritable invitation à la dégustation et au plaisir.
+                        </p>
+                        <span class="block text-sm" style="color: #800020;">
+                            <strong>Cépages :</strong> Cabernet Sauvignon, Merlot, Petit Verdot<br>
+                            <strong>Garde :</strong> À savourer dès maintenant ou à conserver jusqu’en 2035.<br>
+                            <strong>Température de service :</strong> 16-18°C
+                        </span>
+                    </div>
+            
+                    <!-- Image Section -->
+                    <div class="lg:w-1/2 mt-6 lg:mt-0 lg:pl-8 -ml-8">
+                        <img 
+                            src="images/vin20.jpg" 
+                            alt="Château Margaux 2015" 
+                            class="rounded-lg shadow-lg"
+                        />
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <div class="media">
+            <ul>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="bi bi-tiktok"></i></i></li>  
+            </ul>
+        </div>
+        
+        
+    </div>
+    <script src="script.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</body>
+
+</html>
