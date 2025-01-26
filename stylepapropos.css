@@ -74,6 +74,7 @@ nav ul li a:hover::after {
     font-size: 25px;
     color: grey;
     line-height: 150%;
+    font-style: italic;
 }
 
 /* Icônes de réseaux sociaux */
@@ -96,6 +97,36 @@ nav ul li a:hover::after {
     transform: scale(1.8);
 }
 
+.partenaires-section {
+  text-align: center;
+  margin-top: 150px; /* Espacement global pour la section */
+}
+
+.partenaires-titre {
+  text-align: center;
+  font-size: 39px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacement sous le titre */
+  color:#800020; /* Couleur du texte */
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+.item {
+  flex: 1 1 calc(25% - 20px); /* Largeur ajustable pour chaque logo */
+  max-width: 150px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
 
 .wrapper {
   width: 90%;
@@ -226,7 +257,88 @@ nav ul li a:hover::after {
         font-size: 16px;
         margin: 0 10px;
     }
+     .partenaires-section {
+    margin-top: 100px; /* Réduction de l'espacement supérieur */
+  }
+
+  .partenaires-titre {
+    font-size: 32px; /* Taille du titre adaptée pour tablette */
+    margin-bottom: 15px; /* Réduction de l'espacement sous le titre */
+  }
+
+  .wrapper {
+    width: 95%; /* Ajustement de la largeur */
+    gap: 15px; /* Réduction de l'espacement entre les éléments */
+    margin-top: 3rem; /* Espacement global */
+  }
+
+  .item {
+    flex: 1 1 calc(33.33% - 15px); /* Ajustement de la largeur pour afficher 3 éléments par ligne */
+    max-width: 120px; /* Réduction de la taille maximale des logos */
+    height: auto; /* Ajustement automatique de la hauteur */
+    position: static; /* Suppression des animations pour tablette */
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Suppression de l'animation pour les tablettes */
+  .wrapper {
+    overflow: visible;
+    mask-image: none;
+  }
+
+  .item {
+    animation: none;
+  }
+
+  .item span {
+    font-size: 14px; /* Taille réduite du texte sous les logos */
+  }
+  .partenaires-section {
+    margin-top: 100px; /* Réduction de l'espacement supérieur */
+  }
+
+  .partenaires-titre {
+    font-size: 32px; /* Taille du titre adaptée pour tablette */
+    margin-bottom: 15px; /* Réduction de l'espacement sous le titre */
+  }
+
+  .wrapper {
+    width: 95%; /* Ajustement de la largeur */
+    gap: 15px; /* Réduction de l'espacement entre les éléments */
+    margin-top: 3rem; /* Espacement global */
+  }
+
+  .item {
+    flex: 1 1 calc(33.33% - 15px); /* Ajustement de la largeur pour afficher 3 éléments par ligne */
+    max-width: 120px; /* Réduction de la taille maximale des logos */
+    height: auto; /* Ajustement automatique de la hauteur */
+    position: static; /* Suppression des animations pour tablette */
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Suppression de l'animation pour les tablettes */
+  .wrapper {
+    overflow: visible;
+    mask-image: none;
+  }
+
+  .item {
+    animation: none;
+  }
+
+  .item span {
+    font-size: 14px; /* Taille réduite du texte sous les logos */
+  }
 }
+
 
 @media screen and (max-width: 480px) {
     .img img {

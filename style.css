@@ -88,6 +88,7 @@ nav ul li a:hover::after {
     text-transform: uppercase;
     left: 150px;
     letter-spacing: 10px;
+    font-style: italic;
 }
 
 /* Bouton */
@@ -175,6 +176,77 @@ nav ul li a:hover::after {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .line-one,
+    .line-two {
+        display: none;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .title {
+        position: relative;
+        top: 20px;
+        left: 0;
+        margin: 0 auto;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 50px; /* Espacement supplémentaire sous le texte */
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+    .title span {
+        font-size: 50px;
+    }
+
+    .title p {
+        font-size: 16px;
+        color: grey;
+    }
+
+    /* Alignement des icônes */
+    .media ul {
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .media ul li {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    .btn{
+        margin-top: 250px;
+    }
+    /* Bouton sous le texte */
+   
+    .btn a {
+        display: inline-block;
+        margin-top: 50px; /* Plus d'espacement entre le texte et le bouton */
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #800020;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        margin-left: -70px;
+    }
+
+    .btn a:hover {
+        background-color: #63021b;
+    }
+}
 @media screen and (max-width: 768px) {
     .line-one,
     .line-two {
@@ -222,8 +294,11 @@ nav ul li a:hover::after {
         font-size: 16px;
         margin: 0 10px;
     }
-
+    .btn{
+        margin-top: 250px;
+    }
     /* Bouton sous le texte */
+   
     .btn a {
         display: inline-block;
         margin-top: 50px; /* Plus d'espacement entre le texte et le bouton */
