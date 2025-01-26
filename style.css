@@ -176,119 +176,108 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 768px) {
-    .logo {
-        left: 30px;
-        font-size: 16px;
-    }
-
-    .line-one,
-    .line-two {
-        width: 10px;
-    }
-
-    .line-one {
-        left: 10%;
-    }
-
-    .line-two {
-        left: 12%;
-    }
-
-    .img img {
-        width: 300px;
-        right: 220%;
-        bottom: -129px;
-        z-index: -3;
-    }
-
-    .title {
-        font-size: 50px;
-        left: 25%;
-        text-align: center;
-    }
-
-    .title p {
-        line-height: 30px;
-        text-align: center;
-        font-size: 18px;
-        left: 80px;
-    }
-    
-
-    .btn a {
-        right: -40%;
-        bottom: 100px;
-        font-size: 16px;
-    }
-
-   
-
-    .media ul li {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
     .line-one,
     .line-two {
         display: none;
     }
 
-    .logo {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 14px;
-        text-align: center;
-    }
-
     .img img {
-        width: 300px;
-        right: 220%;
-        bottom: -129px;
-        z-index: -3;
-        transform: translateX(-50%);
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
     }
 
     .title {
-        font-size: 40px;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 20px;
+        left: 0;
+        margin: 0 auto;
+        font-size: 40px;
         text-align: center;
+        margin-bottom: 50px; /* Espacement supplémentaire sous le texte */
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+    .title span {
+        font-size: 50px;
     }
 
     .title p {
         font-size: 16px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
+        color: grey;
     }
 
-    .btn a {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 180px;
-        font-size: 14px;
-        padding: 8px 16px;
-        text-align: center;
-    }
-
+    /* Alignement des icônes */
     .media ul {
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 50%;
-        text-align: center;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .media ul li {
-        font-size: 12px;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    /* Bouton sous le texte */
+    .btn a {
+        display: inline-block;
+        margin-top: 50px; /* Plus d'espacement entre le texte et le bouton */
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #800020;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
         text-align: center;
+        margin-left: -70px;
+    }
+
+    .btn a:hover {
+        background-color: #63021b;
     }
 }
 
+@media screen and (max-width: 480px) {
+    .img img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
 
+    nav ul li {
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 60px; /* Espacement plus important sur les petits écrans */
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .media ul li {
+        font-size: 14px;
+    }
+
+    /* Ajustement du bouton pour petits écrans */
+    .btn a {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-top: 250px; /* Plus d'espacement sous le texte */
+        margin-right: 50px;
+    }
+}
 
